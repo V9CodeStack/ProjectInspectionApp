@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ProjectInspectionApp/static/css/main.b2d7d91d.css",
+    "main.js": "/ProjectInspectionApp/static/js/main.0e525b2c.js",
+    "index.html": "/ProjectInspectionApp/index.html",
+    "main.b2d7d91d.css.map": "/ProjectInspectionApp/static/css/main.b2d7d91d.css.map",
+    "main.0e525b2c.js.map": "/ProjectInspectionApp/static/js/main.0e525b2c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b2d7d91d.css",
+    "static/js/main.0e525b2c.js"
+  ]
+}
