@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/ProjectInspectionApp/static/css/main.e418bb78.css",
+    "main.css": "/ProjectInspectionApp/static/css/main.8cdcc09d.css",
     "main.js": "/ProjectInspectionApp/static/js/main.b5774164.js",
     "index.html": "/ProjectInspectionApp/index.html",
-    "main.e418bb78.css.map": "/ProjectInspectionApp/static/css/main.e418bb78.css.map",
+    "main.8cdcc09d.css.map": "/ProjectInspectionApp/static/css/main.8cdcc09d.css.map",
     "main.b5774164.js.map": "/ProjectInspectionApp/static/js/main.b5774164.js.map"
   },
   "entrypoints": [
-    "static/css/main.e418bb78.css",
+    "static/css/main.8cdcc09d.css",
     "static/js/main.b5774164.js"
   ]
 }
