@@ -1,0 +1,138 @@
+.textarea {
+  outline: none;
+}
+
+.errorClassName {
+  color: red;
+}
+
+textarea {
+  width: 100%;
+  padding: 5px;
+  font-size: 16px;
+  line-height: 1.5;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical;
+  height: 130px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 0px !important;
+  border-top: none;
+}
+
+.textarea::placeholder {
+  font-size: 12px;
+}
+
+.btn {
+  padding: 8px 16px;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.textarea:focus {
+  outline: none;
+  border-color: #ff69b4;
+}
+
+.button-green {
+  background-color: green;
+}
+
+.button-green:hover {
+  background-color: rgb(25, 171, 25);
+}
+
+.button-blue {
+  background-color: rgba(0, 0, 255, 0.783);
+}
+
+.button-blue:hover {
+  background-color: rgb(7, 7, 166);
+}
+
+.button-brown {
+  background-color: orange;
+}
+
+.button-brown:hover {
+  background-color: rgb(190, 138, 41);
+}
+
+.button-pink {
+  background-color: red;
+}
+
+.button-pink:hover {
+  background-color: hsl(4, 83%, 30%);
+}
+
+.button-cyan {
+  background-color: #0bd0bc;
+}
+
+.button-cyan:hover {
+  background-color: #09bfad;
+}
+
+.edit-delete-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 2px;
+}
+
+.main-loadingview {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.edit-delete-container {
+  margin-top: 10px;
+}
+
+.manager-feedback-container {
+  margin-bottom: 5px;
+}
+
+.add-new-card-container {
+  padding-top: 8px;
+  padding-bottom: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.add-new-card-button {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.green-btn-card {
+  color: green;
+}
+
+.pink-btn-card {
+  color: red;
+}
+
+.brown-btn-card {
+  color: orange;
+}
+
+.blue-btn-card {
+  color: blue;
+}
+
+.cyan-btn-card {
+  color: #0bd0bc;
+}

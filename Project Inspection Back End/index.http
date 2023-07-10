@@ -1,0 +1,45 @@
+GET https://projectinspection.netlify.app/.netlify/functions/api/feedback/64aa245d3ecac6d94ec7e763
+Content-Type: application/json
+###
+
+GET https://projectinspection.netlify.app/.netlify/functions/api/group/64aa245d3ecac6d94ec7e763
+Content-Type: application/json
+###
+
+
+POST  https://projectinspection.netlify.app/.netlify/functions/api/group
+Content-Type: application/json
+
+{
+  "name": "Liberty Mutual"
+}
+###
+
+POST https://projectinspection.netlify.app/.netlify/functions/api/feedback/64a965754e405c09edf10758
+Content-Type: application/json
+
+{
+  "feedbackType": "Good",
+  "feedbackMessage": "This project is Good!"
+}
+###
+
+POST  https://projectinspection.netlify.app/.netlify/functions/api/comment/64a970094fba0444a8adf4a8
+Content-Type: application/json
+
+{
+  "commentMessage": "Nice Work"
+}
+###
+
+PUT https://projectinspection.netlify.app/.netlify/functions/api/feedback/648f1101e2722bc7ae8f9e41
+Content-Type: application/json
+
+{
+  "feedbackMessage": "This is not good project"
+}
+###
+
+DELETE  https://projectinspection.netlify.app/.netlify/functions/api/feedback/648f1101e2722bc7ae8f9e41
+Content-Type: application/json
+###

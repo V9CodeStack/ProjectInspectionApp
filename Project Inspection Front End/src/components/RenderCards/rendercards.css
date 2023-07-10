@@ -1,0 +1,113 @@
+.main-card {
+  width: calc(20% - 20px);
+  margin-right: 20px;
+  margin-bottom: 25px;
+}
+
+.green {
+  background: linear-gradient(to right, green, #00cc00);
+  border-radius: 5px;
+}
+
+.green-card {
+  background: #c4e2c4;
+}
+
+.pink {
+  background: linear-gradient(to right, red, #e96c6c);
+  border-radius: 5px;
+}
+
+.pink-card {
+  background: #fbc8c4;
+}
+
+.brown {
+  background: linear-gradient(to right, orange, #f0d975);
+  border-radius: 5px;
+}
+
+.brown-card {
+  background: #f5e392;
+}
+
+.blue {
+  background: linear-gradient(to right, blue, #3c8eeb);
+  border-radius: 5px;
+}
+
+.blue-card {
+  background: #b9cdf9;
+}
+
+.cyan {
+  background: linear-gradient(to right, #05beab, #07f0d8);
+  border-radius: 5px;
+}
+
+.cyan-card {
+  background: #bef7f2;
+}
+
+.card-header {
+  color: white;
+  font-size: 17px;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 0px;
+}
+
+.card {
+  min-height: 120px;
+  text-align: left;
+  padding-bottom: 1px;
+  padding-right: 2px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.card-text {
+  margin-top: 5px;
+  padding-left: 5px;
+  padding-top: 5px;
+  font-size: 17px;
+  line-height: 1.3;
+}
+
+.render-all-cards-container {
+  display: flex;
+  margin-top: 15px;
+}
+
+.loader-container {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader-submit-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.comment-card {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.submit-cancel-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 3px;
+}
+
+.Manager-Feedback-text {
+  margin-bottom: 6px;
+}
