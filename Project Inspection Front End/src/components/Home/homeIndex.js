@@ -56,9 +56,9 @@ const Home = () => {
           {showList && listContent()}
         </div>
       </div>
-      <div className="footer-container">
+      {/* <div className="footer-container">
         <footer className="footer">Developed by V9</footer>
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -111,28 +111,50 @@ textarea {
 }
 
 .add-new-card-button {
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding: 8px 16px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 12px;
   cursor: pointer;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .green-btn-card {
-  color: green;
+  background-color: green !important;
+}
+
+.green-btn-card:hover {
+  background: linear-gradient(to right, green, #00cc00);
 }
 
 .pink-btn-card {
-  color: red;
+  background: red;
+}
+
+.pink-btn-card:hover {
+  background: linear-gradient(to right, red, #e96c6c);
 }
 
 .brown-btn-card {
-  color: orange;
+  background: orange;
+}
+
+.brown-btn-card:hover {
+  background: linear-gradient(to right, orange, #f0d975);
 }
 
 .blue-btn-card {
-  color: blue;
+  background: blue;
+}
+
+.blue-btn-card:hover {
+  background: linear-gradient(to right, blue, #3c8eeb);
 }
 
 .cyan-btn-card {
-  color: #0bd0bc;
+  background: #05beab;
+}
+
+.cyan-btn-card:hover {
+  background: linear-gradient(to right, #05beab, #07f0d8);
 }
