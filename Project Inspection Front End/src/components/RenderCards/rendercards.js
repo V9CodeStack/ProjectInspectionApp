@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import Cookies from "js-cookie";
 import Loader from "react-loader-spinner";
 
+import relaxImg from "./relax-img.jpg";
+
 import "./rendercards.css";
 
 const RenderCards = (props) => {
@@ -825,6 +827,15 @@ const RenderCards = (props) => {
         {renderActions()}
         {renderKudos()}
       </div>
+      {groupData.length === 0 ? (
+        <div className="img-container">
+          <h1 className="description">
+            Send Group ID to your team then Sit and Relax, I will show you as
+            soon as I got feedback from your Team.
+          </h1>
+          <img className="img" src={relaxImg} />
+        </div>
+      ) : null}
     </>
   );
 };

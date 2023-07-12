@@ -14,6 +14,7 @@ const Team = () => {
 
   const [createGroupFlag, setCreateGroupFlag] = useState(true);
   const [errorFlag, setErrorFlag] = useState(false);
+  const [resetFlag, setResetFlag] = useState(false);
 
   useEffect(() => {
     const groupNameCookie = Cookies.get("group_name");
@@ -22,7 +23,7 @@ const Team = () => {
       setGroupId(groupIdCookie);
       setGroupName(groupNameCookie);
     }
-  }, [groupId]);
+  }, []);
 
   const onChangeInput = (e) => {
     setInputGroupId(e.target.value);
@@ -30,6 +31,7 @@ const Team = () => {
 
   const activateGroup = async () => {
     if (inputGroupId.length > 0) {
+      setLoader(true);
       const feedBackIdsCookie = Cookies.get("feedBackIds");
       const groupId = Cookies.get("group_id");
       setCreateGroupFlag(false);
@@ -51,6 +53,7 @@ const Team = () => {
         await Cookies.set("group_name", data.name, { expires: 1 });
         await Cookies.set("group_id", inputGroupId, { expires: 1 });
         await setInputGroupId("");
+        setResetFlag(!resetFlag);
       } else {
         setCreateGroupFlag(true);
         setErrorFlag(true);

@@ -111,3 +111,26 @@
 .Manager-Feedback-text {
   margin-bottom: 6px;
 }
+
+.img-container {
+  width: 910px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+}
+
+.img {
+  width: 400px;
+}
+
+.description {
+  color: #1e293b;
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.2;
+  opacity: 0.8;
+  /* text-align: center; */
+}

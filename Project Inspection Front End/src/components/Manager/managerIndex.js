@@ -18,6 +18,7 @@ class Manager extends Component {
     displayFlag: false,
     loader: false,
     createGroupFlag: true,
+    resetFlag: false,
   };
 
   componentDidMount() {
@@ -43,6 +44,7 @@ class Manager extends Component {
       this.setState({
         loader: true,
         createGroupFlag: false,
+        displayFlag: false,
       });
       const url =
         "https://projectinspection.netlify.app/.netlify/functions/api/group";
