@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ProjectInspectionApp/static/css/main.01e56ca1.css",
-    "main.js": "/ProjectInspectionApp/static/js/main.74c39bad.js",
+    "main.js": "/ProjectInspectionApp/static/js/main.a5146bb0.js",
     "static/media/Roboto-LightItalic.ttf": "/ProjectInspectionApp/static/media/Roboto-LightItalic.c590382422f2742d788b.ttf",
     "static/media/Roboto-Italic.ttf": "/ProjectInspectionApp/static/media/Roboto-Italic.87f3afe16a8c3c370634.ttf",
     "static/media/Roboto-Regular.ttf": "/ProjectInspectionApp/static/media/Roboto-Regular.fc2b5060f7accec5cf74.ttf",
@@ -9,10 +9,10 @@
     "static/media/relax-img.jpg": "/ProjectInspectionApp/static/media/relax-img.4b4850c17971621ccfe4.jpg",
     "index.html": "/ProjectInspectionApp/index.html",
     "main.01e56ca1.css.map": "/ProjectInspectionApp/static/css/main.01e56ca1.css.map",
-    "main.74c39bad.js.map": "/ProjectInspectionApp/static/js/main.74c39bad.js.map"
+    "main.a5146bb0.js.map": "/ProjectInspectionApp/static/js/main.a5146bb0.js.map"
   },
   "entrypoints": [
     "static/css/main.01e56ca1.css",
-    "static/js/main.74c39bad.js"
+    "static/js/main.a5146bb0.js"
   ]
 }
