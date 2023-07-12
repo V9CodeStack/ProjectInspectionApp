@@ -32,8 +32,9 @@ const Team = () => {
   const activateGroup = async () => {
     if (inputGroupId.length > 0) {
       setLoader(true);
-      const feedBackIdsCookie = Cookies.get("feedBackIds");
-      const groupId = Cookies.get("group_id");
+      const feedBackIdsCookie = await Cookies.get("feedBackIds");
+
+      const groupId = await Cookies.get("group_id");
       setCreateGroupFlag(false);
       //get GroupName
       const url = `https://projectinspection.netlify.app/.netlify/functions/api/group/${inputGroupId}`;
@@ -57,6 +58,7 @@ const Team = () => {
       } else {
         setCreateGroupFlag(true);
         setErrorFlag(true);
+        setLoader(false);
       }
     }
   };

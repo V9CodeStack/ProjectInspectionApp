@@ -113,7 +113,7 @@
 }
 
 .img-container {
-  width: 910px;
+  width: 820px;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -122,14 +122,14 @@
 }
 
 .img {
-  width: 400px;
+  width: 350px;
 }
 
 .description {
   color: #1e293b;
   font-family: "Roboto";
   font-weight: bold;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 1.2;
   opacity: 0.8;
   /* text-align: center; */
