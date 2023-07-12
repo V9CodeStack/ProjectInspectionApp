@@ -2,7 +2,7 @@ import React from "react";
 import copy from "clipboard-copy";
 
 class CopyToClipboardButton extends React.Component {
-  state = { copyText: "Copy" };
+  state = { copyText: "Copy Group ID" };
   copyToClipboard = () => {
     const { text } = this.props;
     copy(text);
