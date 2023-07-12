@@ -8,7 +8,7 @@ class CopyToClipboardButton extends React.Component {
     copy(text);
     this.setState({ copyText: "Copied!" });
     setTimeout(() => {
-      this.setState({ copyText: "Copy" });
+      this.setState({ copyText: "Copy Group ID" });
     }, 1500);
   };
 
