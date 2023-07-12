@@ -833,7 +833,7 @@ const RenderCards = (props) => {
             Send Group ID to your team then Sit and Relax, I will show you as
             soon as I got feedback from your Team.
           </h1>
-          <img className="img" src={relaxImg} />
+          <img className="img" src={relaxImg} alt="RelaxImg" />
         </div>
       ) : null}
     </>
