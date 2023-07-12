@@ -33,32 +33,41 @@ const Team = () => {
     if (inputGroupId.length > 0) {
       setLoader(true);
       const feedBackIdsCookie = await Cookies.get("feedBackIds");
-
       const groupId = await Cookies.get("group_id");
       setCreateGroupFlag(false);
-      //get GroupName
-      const url = `https://projectinspection.netlify.app/.netlify/functions/api/group/${inputGroupId}`;
-      const response = await fetch(url);
-      const data = await response.json();
-      if (response.ok === true) {
-        if (feedBackIdsCookie !== undefined && groupId !== inputGroupId) {
-          let dummyId = ["3473749374"];
-          Cookies.set("feedBackIds", dummyId, { expires: 1 });
+      try {
+        const url = `https://projectinspection.netlify.app/.netlify/functions/api/group/${inputGroupId}`;
+        const response = await fetch(url);
+
+        if (!response.ok) {
+          throw new Error("Error fetching group data");
         }
-        await setErrorFlag(false);
-        await setGroupId(inputGroupId);
-        await setGroupName(data.name);
-        await setLoader(false);
-        await setCreateGroupFlag(false);
-        await resetGroupCreated();
-        await Cookies.set("group_name", data.name, { expires: 1 });
-        await Cookies.set("group_id", inputGroupId, { expires: 1 });
-        await setInputGroupId("");
-        setResetFlag(!resetFlag);
-      } else {
+
+        const data = await response.json();
+
+        if (data && data.name) {
+          if (feedBackIdsCookie !== undefined && groupId !== inputGroupId) {
+            let dummyId = ["3473749374"];
+            Cookies.set("feedBackIds", dummyId, { expires: 1 });
+          }
+          await setErrorFlag(false);
+          await setGroupId(inputGroupId);
+          await setGroupName(data.name);
+          await setLoader(false);
+          await setCreateGroupFlag(false);
+          await resetGroupCreated();
+          await Cookies.set("group_name", data.name, { expires: 1 });
+          await Cookies.set("group_id", inputGroupId, { expires: 1 });
+          await setInputGroupId("");
+          setResetFlag(!resetFlag);
+        } else {
+          throw new Error("Invalid response data");
+        }
+      } catch (error) {
         setCreateGroupFlag(true);
         setErrorFlag(true);
         setLoader(false);
+        console.error(error);
       }
     }
   };
