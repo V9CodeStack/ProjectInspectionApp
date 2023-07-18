@@ -17,6 +17,13 @@
   align-items: center;
 }
 
+@media screen and (min-width: 1300px) {
+  .groupname-container {
+    /* padding-right: 830px; */
+    padding-right: 70px;
+  }
+}
+
 .groupname-container {
   flex-grow: 1;
   display: flex;
@@ -51,10 +58,10 @@
   color: #333;
   text-decoration: none;
   cursor: pointer;
-  margin-right: 15px;
-  width: 90px;
+  margin-right: 20px;
+  /* width: 90px; */
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   height: 0px;
 }

@@ -77,7 +77,7 @@ const NavBar = (props) => {
               </MenuItem>
               <MenuItem key="Team" onClick={handleCloseNavMenu}>
                 <Link to="/ProjectInspectionApp/team" className="links-top">
-                  <Typography textAlign="center">Team</Typography>
+                  <Typography textAlign="center">Team Member</Typography>
                 </Link>
               </MenuItem>
             </Menu>
@@ -96,7 +96,9 @@ const NavBar = (props) => {
                 key="Home"
                 sx={{ my: 2, color: "white", display: "block" }}
               >
-                Home
+                <Typography variant="body1" style={{ textTransform: "none" }}>
+                  Home
+                </Typography>
               </Button>
             </Link>
             <Link
@@ -113,7 +115,9 @@ const NavBar = (props) => {
                 key="Manager"
                 sx={{ my: 2, color: "white", display: "block" }}
               >
-                Manager
+                <Typography variant="body1" style={{ textTransform: "none" }}>
+                  Manager
+                </Typography>
               </Button>
             </Link>
             <Link
@@ -130,7 +134,9 @@ const NavBar = (props) => {
                 key="Team"
                 sx={{ my: 2, color: "white", display: "block" }}
               >
-                Team
+                <Typography variant="body1" style={{ textTransform: "none" }}>
+                  Team Member
+                </Typography>
               </Button>
             </Link>
           </Box>

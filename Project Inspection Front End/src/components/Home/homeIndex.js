@@ -21,7 +21,8 @@ const Home = () => {
       <div className="ul-container">
         <ul>
           <li className="list">
-            With this App, you can receive feedback anonymously from your Team.
+            With this App, you can receive the feedback anonymously from your
+            Team.
           </li>
           <li className="list">
             To manage the app, click on "Manager" and create a group name. A
@@ -29,12 +30,12 @@ const Home = () => {
             your team.
           </li>
           <li className="list">
-            Your team members can access the "Team" section and activate the
+            Your team can access the "Team Member" section and activate the
             Group ID to provide their feedback.
           </li>
           <li className="list">
             You do not need to manually refresh the page because it will
-            automatically refresh every 5 seconds.
+            automatically refresh every 6 seconds.
           </li>
           <li className="list">
             Once your team has finished providing feedback, you can download the

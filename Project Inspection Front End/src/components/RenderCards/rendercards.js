@@ -38,7 +38,7 @@ const RenderCards = (props) => {
 
   useEffect(() => {
     if (groupID) {
-      const interval = setInterval(() => mainGetData(), 5000);
+      const interval = setInterval(() => mainGetData(), 6000);
       return () => {
         clearInterval(interval);
       };
